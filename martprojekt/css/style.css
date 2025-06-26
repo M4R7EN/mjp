@@ -1,0 +1,322 @@
+
+  /* Custom CSS to match the image's specific colors and layout */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-color: #F5EEDC;
+}
+
+
+/* Top Navbar */
+.navbar-custom {
+  background:linear-gradient(90deg, #F5EEDC 75%, #04423F 25%); /* Dark greenish color from image */
+  padding: 10px 0;
+  box-shadow: none; /* Remove default Materialize shadow */
+}
+
+.navbar-custom {
+  display: flex;
+  background:linear-gradient(90deg, #F5EEDC 78%, #04423F 22%); /* Dark greenish color from image */
+  font-size: 1.9rem;
+  line-height: 3em;
+  padding-bottom: 4em;
+  justify-content: center;
+}
+
+.sidenav {
+  background-color: #04423F;
+}
+
+.sidenav-trigger {
+  color: #04423F;
+}
+
+.sidenav li a{
+  color: #F5EEDC;
+}
+
+.brand-logo {
+  margin-bottom: 2em;
+}
+
+
+.brand-logo img {
+  height: 2.5em; /* Adjust logo size */
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 2em;
+}
+
+.footer-logo {
+  color: #F5EEDC;
+  margin-left: -2.5em;
+}
+
+
+.navbar-custom ul li a {
+  color: #04423F;
+  font-weight: bold;
+  padding-right: 64px;
+  padding-top: 10px;
+}
+.right {
+  margin-right: 4em;
+}
+
+.navbar-custom ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section - Updated for dual color (gradient) */
+.hero-section {
+  background: linear-gradient(to right, #2F534F, #04423F); /* Dark greenish gradient */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  min-height: 500px; /* Adjust height as needed */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 1; /* Ensure text is above any background elements */
+  max-width: 600px; /* Limit content width */
+  margin-left: 5%; /* Indent content from the left edge */
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.btn-cta {
+  background-color: #fff;
+  color: #2F534F !important; /* Ensure text color is dark */
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 30px;
+  height: 50px;
+  line-height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #eee;
+}
+
+/* Content Section - Why Choose Us & Contact Form */
+.content-section {
+  background-color: #F5EEDC;
+  padding: 80px 0;
+}
+
+.content-container {
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-placeholder {
+  min-height: 300px; /* Example height */
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px; /* Space below on small screens */
+  margin-right: 3em;
+}
+
+.text-content {
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
+
+.contact-form {
+  margin-left: 5em;
+}
+
+.text-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label {
+  color: #04423F !important;
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #04423F !important;
+  box-shadow: 0 1px 0 0 #04423F !important;
+}
+
+.btn-send {
+  background-color: #04423F; /* Dark greenish color for button */
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-send:hover {
+  background-color: #3A6A65; /* Slightly lighter on hover */
+}
+
+/* Footer - Updated for dual color (gradient) */
+.footer-custom {
+  background: linear-gradient(to right, #2F534F, #04423F); /* Dark greenish gradient for footer */
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo-container img {
+  height: 60px; /* Adjust logo size */
+  margin-right: 15px;
+}
+
+.footer-logo-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.footer-est {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-left: 4em;
+}
+
+.footer-contact-info {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: right; /* Align right on desktop */
+}
+
+.footer-contact-info span {
+  display: block;
+}
+
+.footer-contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 992px) {
+  .text-content {
+    margin-left: 0em;
+  }
+
+  .contact-form {
+    margin-left: 0em;
+  }
+
+  .brand-logo img {
+    margin-left: 0em;
+  }
+
+  .navbar-custom .brand-logo {
+    padding-left: 10px;
+  }
+
+  .hero-section {
+    text-align: center;
+    justify-content: center;
+    padding: 60px 5%;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .image-placeholder {
+    min-height: 200px;
+  }
+
+  .text-content h3, .contact-form h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer-contact-info, .footer-copyright {
+    text-align: center; /* Center on smaller screens */
+    margin-top: 20px; /* Add space between elements */
+  }
+
+  .footer-logo-container {
+    justify-content: center; /* Center logo on small screens */
+  }
+
+  .footer-est {
+    margin-left: 0; /* Remove indent on small screens */
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    min-height: 400px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}

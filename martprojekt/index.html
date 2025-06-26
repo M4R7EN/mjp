@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Märt & Pojad MTJ</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Google Fonts - Inter for general text, and a custom font for the logo if needed (here, a generic serif is used) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar-custom">
+  <div class="nav-wrapper container">
+    <a href="#" class="brand-logo">
+      <img src="img/mart_ja_pojad_nobg.png" alt="Märt & Pojad MTJ Logo">
+    </a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">TEENUSED</a></li>
+      <li><a href="#">HINNAKIRI</a></li>
+      <li><a href="#">MASINAD</a></li>
+      <li><a href="#">GALERII</a></li>
+      <li><a href="#">KONTAKT</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a class="sidenav-text" href="#">TEENUSED</a></li>
+  <li><a class="sidenav-text" href="#">HINNAKIRI</a></li>
+  <li><a class="sidenav-text" href="#">MASINAD</a></li>
+  <li><a class="sidenav-text" href="#">GALERII</a></li>
+  <li><a class="sidenav-text" href="#">KONTAKT</a></li>
+</ul>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">TÕSTE- JA VEOTEENUS</h1>
+      <p class="hero-subtitle">Uuduväärtuslikud transpordilahendused igale vajadusele</p>
+      <a href="#" class="btn btn-large waves-effect waves-light btn-cta">VÕTA ÜHENDUST</a>
+    </div>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-section">
+  <div class="container content-container">
+    <div class="row">
+      <div class="col s12 m6">
+        <!-- Image Placeholder -->
+        <img src="img/kraanaauto.jpg" class="image-placeholder"></img>
+      </div>
+      <div class="col s12 m6">
+        <div class="text-content">
+          <h3>Miks Valida Märt ja Pojad MTJ?</h3>
+          <p>Kaasaegne ja korralikult hooldatud tehnika: kasutame ajakohast masinaparki tõhusate ja kvaliteetsete tulemuste saavutamiseks.</p>
+        </div>
+        <div class="contact-form">
+          <h3>KIRJUTA MEILE</h3>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="name" type="text" class="validate">
+                  <label for="name">NIMI</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">EMAIL</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <button class="btn waves-effect waves-light btn-send" type="submit" name="action">SAADA
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-custom">
+  <div class="container">
+    <div class="row valign-wrapper">
+      <div class="col s12 m6">
+        <div class="footer-logo-container container">
+          <!-- Placeholder for Footer Logo -->
+          <img src="img/svg_martjapojad.svg" class="footer-logo" alt="Märt & Pojad MTJ Footer Logo">
+        </div>
+        <p class="footer-est">EST. 2010</p>
+      </div>
+      <div class="col s12 m6">
+        <div class="footer-contact-info">
+          <span>Järiste, Nõo, Estonia</span>
+          <span>jaristetehnik@gmail.com</span>
+          <span>+372 503 3703</span>
+          <p class="footer-copyright">&copy; 2025 Järiste Tehnik OÜ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Materialize Sidenav for mobile responsiveness
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+</script>
+</body>
+</html>
