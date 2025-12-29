@@ -48,17 +48,15 @@
     <div class="hero-content">
       <h1 class="hero-title">TÕSTE- JA VEOTEENUS</h1>
       <p class="hero-subtitle">Uuduväärtuslikud transpordilahendused igale vajadusele</p>
-      <a href="#" class="btn btn-large waves-effect waves-light btn-cta">VÕTA ÜHENDUST</a>
+      <a href="kontakt.html" class="btn btn-large waves-effect waves-light btn-cta">VÕTA ÜHENDUST</a>
     </div>
   </div>
 </section>
 
-<!-- Content Section -->
 <section class="content-section">
   <div class="container content-container">
     <div class="row">
       <div class="col s12 m6">
-        <!-- Image Placeholder -->
         <img src="img/kraanaauto.jpg" class="image-placeholder"></img>
       </div>
       <div class="col s12 m6">
@@ -69,26 +67,28 @@
         <div class="contact-form">
           <h3>KIRJUTA MEILE</h3>
           <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="name" type="text" class="validate">
-                  <label for="name">NIMI</label>
-                </div>
+            <form name="kontakt-päring" method="POST" data-netlify="true" style="margin-top: 20px;">
+
+              <input type="hidden" name="form-name" value="kontakt-päring" />
+
+              <div class="input-field">
+                <input id="name" name="nimi" type="text" class="validate" required>
+                <label for="name">Nimi</label>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">EMAIL</label>
-                </div>
+
+              <div class="input-field">
+                <input id="email" name="email" type="email" class="validate" required>
+                <label for="email">E-post</label>
               </div>
-              <div class="row">
-                <div class="col s12">
-                  <button class="btn waves-effect waves-light btn-send" type="submit" name="action">SAADA
-                    <i class="material-icons right">send</i>
-                  </button>
-                </div>
+
+              <div class="input-field">
+                <textarea id="message" name="sõnum" class="materialize-textarea" required></textarea>
+                <label for="message">Sõnum / Päring</label>
               </div>
+
+              <button class="btn waves-effect waves-light green-regular darken-3" type="submit" style="width: 100%;">
+                SAADA
+              </button>
             </form>
           </div>
         </div>
