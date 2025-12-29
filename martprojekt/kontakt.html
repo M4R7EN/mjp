@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+
 <nav class="navbar-custom">
   <div class="nav-wrapper container">
     <a href="#" class="brand-logo">
@@ -41,57 +41,85 @@
   <li><a class="sidenav-text" href="#">KONTAKT</a></li>
 </ul>
 
-<!-- Hero Section -->
-<section class="hero-section">
+
+<section class="hinnakiri-title hero-section-hinnakiri center-align">
   <div class="container">
-    <div class="hero-content">
-      <h1 class="hero-title">TÕSTE- JA VEOTEENUS</h1>
-      <p class="hero-subtitle">Uuduväärtuslikud transpordilahendused igale vajadusele</p>
-      <a href="#" class="btn btn-large waves-effect waves-light btn-cta">VÕTA ÜHENDUST</a>
-    </div>
+    <h1 class="hinnakiri-title-text">KONTAKT</h1>
+    <p class="hinnakiri-subtext">Võtke meiega ühendust ja leiame teie projektile sobiva lahenduse.</p>
   </div>
 </section>
 
-<!-- Content Section -->
 <section class="content-section">
-  <div class="container content-container">
+  <div class="container">
     <div class="row">
-      <div class="col s12 m6">
-        <!-- Image Placeholder -->
-        <img src="img/kraanaauto.jpg" class="image-placeholder"></img>
-      </div>
-      <div class="col s12 m6">
-        <div class="text-content">
-          <h3>Miks Valida Märt ja Pojad MTJ?</h3>
-          <p>Kaasaegne ja korralikult hooldatud tehnika: kasutame ajakohast masinaparki tõhusate ja kvaliteetsete tulemuste saavutamiseks.</p>
+
+      <div class="col s12 m5">
+        <div class="card-panel white z-depth-1">
+          <div class="valign-wrapper" style="margin-bottom: 20px;">
+            <i class="material-icons medium green-text-mjp">location_on</i>
+            <div style="margin-left: 20px;">
+              <h6 style="font-weight: 700; margin: 0;">ASUKOHT</h6>
+              <p style="margin: 0;">Järiste, Nõo vald, Tartumaa</p>
+            </div>
+          </div>
+
+          <div class="valign-wrapper" style="margin-bottom: 20px;">
+            <i class="material-icons medium green-text-mjp">phone</i>
+            <div style="margin-left: 20px;">
+              <h6 style="font-weight: 700; margin: 0;">TELEFON</h6>
+              <p style="margin: 0;"><a href="tel:+3725033703" class="grey-text text-darken-3">+372 503 3703</a></p>
+            </div>
+          </div>
+
+          <div class="valign-wrapper">
+            <i class="material-icons medium green-text-mjp">email</i>
+            <div style="margin-left: 20px;">
+              <h6 style="font-weight: 700; margin: 0;">E-POST</h6>
+              <p style="margin: 0;"><a href="mailto:jaristetehnik@gmail.com" class="grey-text text-darken-3">jaristetehnik@gmail.com</a></p>
+            </div>
+          </div>
         </div>
-        <div class="contact-form">
-          <h3>KIRJUTA MEILE</h3>
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="name" type="text" class="validate">
-                  <label for="name">NIMI</label>
-                </div>
+
+        <div class="card-panel blue-grey darken-4 white-text">
+          <h6 style="font-weight: 700;">JÄRISTE TEHNIK OÜ</h6>
+          <p style="font-size: 0.9rem; opacity: 0.8;">
+            Reg. kood: 17163746 <br>
+            KMKR: EE102824003
+          </p>
+        </div>
+      </div>
+
+      <div class="col s12 m7">
+        <div class="card z-depth-2">
+          <div class="card-content">
+            <span class="card-title" style="font-weight: 600;">Saada meile teade</span>
+            <form name="kontakt-päring" method="POST" data-netlify="true" style="margin-top: 20px;">
+
+              <input type="hidden" name="form-name" value="kontakt-päring" />
+
+              <div class="input-field">
+                <input id="name" name="nimi" type="text" class="validate" required>
+                <label for="name">Nimi</label>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">EMAIL</label>
-                </div>
+
+              <div class="input-field">
+                <input id="email" name="email" type="email" class="validate" required>
+                <label for="email">E-post</label>
               </div>
-              <div class="row">
-                <div class="col s12">
-                  <button class="btn waves-effect waves-light btn-send" type="submit" name="action">SAADA
-                    <i class="material-icons right">send</i>
-                  </button>
-                </div>
+
+              <div class="input-field">
+                <textarea id="message" name="sõnum" class="materialize-textarea" required></textarea>
+                <label for="message">Sõnum / Päring</label>
               </div>
+
+              <button class="btn waves-effect waves-light orange darken-3" type="submit" style="width: 100%;">
+                SAADA TEADE
+              </button>
             </form>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
